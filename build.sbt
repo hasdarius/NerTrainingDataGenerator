@@ -1,4 +1,4 @@
-name := "LongLiveScala"
+name := "NerTrainingDataGenerator"
 
 version := "0.1"
 
