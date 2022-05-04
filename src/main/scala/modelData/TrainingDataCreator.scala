@@ -43,6 +43,6 @@ object TrainingDataCreator extends App {
 
   generateCsvFile(trainSentences,"train.csv")
   generateCsvFile(validationSentences,"validate.csv")
-  generateCsvFile(trainSentences,"test.csv")
+//  generateCsvFile(trainSentences,"test.csv")
 
 }
