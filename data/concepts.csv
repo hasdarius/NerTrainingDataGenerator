@@ -1,5 +1,5 @@
 Instance,Concept
-"tmg ,Programming Language
+"tmg",Programming Language
 watfiv",Programming Language
 @formula,Programming Language
 a# (axiom),Programming Language
@@ -705,7 +705,7 @@ oracle-oca-certification,Certification
 oca,Certification
 ocp,Certification
 architect,Seniority
-internship,Seniority
+intern,Seniority
 junior,Seniority
 mid,Seniority
 senior,Seniority
@@ -851,3 +851,5 @@ stored-procedures,Programming Concept
 tdd,Programming Concept
 waterfall,Programming Concept
 web-applications,Programming Concept
+programming,Programming Concept
+
