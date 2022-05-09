@@ -55,7 +55,6 @@ autolisp / visual lisp,Programming Language
 averest,Programming Language
 awk,Programming Language
 axum,Programming Language
-b,Programming Language
 babbage,Programming Language
 bash,Programming Language
 bash and,Programming Language
@@ -80,8 +79,8 @@ bpel,Programming Language
 brew,Programming Language
 c,Programming Language
 c shell,Programming Language
-c# – iso/iec 23270,Programming Language
-c++ – iso/iec 14882,Programming Language
+c#,Programming Language
+c++,Programming Language
 c--,Programming Language
 c/al,Programming Language
 caché objectscript,Programming Language
@@ -112,7 +111,6 @@ citrine (programming language),Programming Language
 cl (ibm),Programming Language
 claire,Programming Language
 clarion,Programming Language
-clean,Programming Language
 clipper,Programming Language
 clist,Programming Language
 clojure,Programming Language
@@ -121,7 +119,6 @@ cms exec (exec),Programming Language
 cms-2,Programming Language
 cobol – iso/iec 1989,Programming Language
 cobra,Programming Language
-code,Programming Language
 coffeescript,Programming Language
 coldfusion,Programming Language
 comal,Programming Language
@@ -145,12 +142,12 @@ csh,Programming Language
 csound,Programming Language
 csp,Programming Language
 css,Programming Language
+css3,Programming Language
 cuda,Programming Language
 curl,Programming Language
 curry,Programming Language
 cyclone,Programming Language
 cython,Programming Language
-d,Programming Language
 dart,Programming Language
 dasl (datapoint's advanced systems language),Programming Language
 dasl (distributed application specification language),Programming Language
@@ -169,8 +166,6 @@ draco,Programming Language
 drakon,Programming Language
 dylan,Programming Language
 dynamo,Programming Language
-e,Programming Language
-e#,Programming Language
 ease,Programming Language
 easy pl/i,Programming Language
 easy programming language,Programming Language
@@ -265,6 +260,7 @@ hop,Programming Language
 hope,Programming Language
 hopscotch,Programming Language
 html,Programming Language
+html5,Programming Language
 hugo,Programming Language
 hume,Programming Language
 hypertalk,Programming Language
@@ -505,7 +501,6 @@ plankalkül,Programming Language
 planner,Programming Language
 plex,Programming Language
 plexil,Programming Language
-plus,Programming Language
 pop-11,Programming Language
 portable,Programming Language
 postscript,Programming Language
@@ -699,6 +694,8 @@ zeno,Programming Language
 zopl,Programming Language
 zpl,Programming Language
 zsh,Programming Language
+js,Programming Language
+pl,Programming Language
 google-cloud-certification,Certification
 databricks-certified-data-engineer,Certification
 oracle-oca-certification,Certification
@@ -716,6 +713,8 @@ amazon-web-services,Tool/Framework
 android,Tool/Framework
 angular,Tool/Framework
 apache-kafka,Tool/Framework
+apache-tomcat,Tool/Framework
+postman,Tool/Framework
 asp.net,Tool/Framework
 aws,Tool/Framework
 aws-route,Tool/Framework
@@ -789,14 +788,19 @@ tomcat,Tool/Framework
 vuejs,Tool/Framework
 websphere,Tool/Framework
 data-engineer,IT Specialization
+data-engineers,IT Specialization
 data-scientist,IT Specialization
 developer,IT Specialization
+developers,IT Specialization
 devops,IT Specialization
+dev-ops,IT Specialization
 engineer,IT Specialization
+engineers,IT Specialization
 frontend-developer,IT Specialization
 full-stack-developer,IT Specialization
 machine-learning-engineer,IT Specialization
 software-developer,IT Specialization
+software-developers,IT Specialization
 software-engineer,IT Specialization
 software-engineers,IT Specialization
 agile,Programming Concept
@@ -852,4 +856,64 @@ tdd,Programming Concept
 waterfall,Programming Concept
 web-applications,Programming Concept
 programming,Programming Concept
-
+integration,Programming Concept
+deployment,Programming Concept
+ide,Programming Concept
+shell,Programming Concept
+script,Programming Concept
+j2ee,Tool/Framework
+jsp,Tool/Framework
+test-driven,Programming Concept
+clean-code,Programming Concept
+web-apps,Programming Concept
+web-application,Programming Concept
+software,Programming Concept
+databases,Programming Concept
+shell-script,Programming Concept
+shell-scripts,Programming Concept
+shell-scripting,Programming Concept
+webserver,Programming Concept
+application,Programming Concept
+file,Programming Concept
+backup,Programming Concept
+module,Programming Concept
+modules,Programming Concept
+testing,Programming Concept
+unit-testing,Programming Concept
+unit-tests,Programming Concept
+backend,Programming Concept
+frontend,Programming Concept
+middleware,Programming Concept
+bug,Programming Concept
+bugs,Programming Concept
+operating-systems,Programming Concept
+operating-system,Programming Concept
+code,Programming Concept
+debugged,Programming Concept
+maintenance,Programming Concept
+applications,Programming Concept
+servers,Programming Concept
+repositories,Programming Concept
+repository,Programming Concept
+branch,Programming Concept
+branches,Programming Concept
+merging,Programming Concept
+merge,Programming Concept
+scripts,Programming Concept
+server,Programming Concept
+information-technology,Programming Concept
+embedded,Programming Concept
+automation,Programming Concept
+debug,Programming Concept
+scripting,Programming Concept
+windows,Tool/Framework
+centos,Tool/Framework
+ant,Tool/Framework
+putty,Tool/Framework
+ms,Tool/Framework
+azureweb,Tool/Framework
+azurewebservices,Tool/Framework
+eclipse,Tool/Framework
+sonarqube,Tool/Framework
+win,Tool/Framework
+bitbucket,Tool/Framework
