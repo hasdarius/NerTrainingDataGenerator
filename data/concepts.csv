@@ -58,7 +58,6 @@ axum,Programming Language
 babbage,Programming Language
 bash,Programming Language
 bash and,Programming Language
-basic,Programming Language
 batch (windows/dos),Programming Language
 bc,Programming Language
 bcpl,Programming Language
@@ -220,7 +219,6 @@ fp,Programming Language
 fpr,Programming Language
 franz lisp,Programming Language
 frege,Programming Language
-g,Programming Language
 g-code,Programming Language
 game maker language,Programming Language
 gamemonkey script,Programming Language
@@ -274,7 +272,6 @@ id,Programming Language
 idl,Programming Language
 idris,Programming Language
 imp,Programming Language
-inform,Programming Language
 io,Programming Language
 ioke,Programming Language
 ipl,Programming Language
@@ -305,7 +302,6 @@ jscript,Programming Language
 jscript .net,Programming Language
 julia,Programming Language
 jython,Programming Language
-k,Programming Language
 kaleidoscope,Programming Language
 karel,Programming Language
 karel++,Programming Language
@@ -321,7 +317,6 @@ krypton,Programming Language
 ksh,Programming Language
 ksh ),Programming Language
 kuka robot language),Programming Language
-l,Programming Language
 l# .net,Programming Language
 labview,Programming Language
 ladder,Programming Language
@@ -368,7 +363,6 @@ mad (michigan algorithm decoder),Programming Language
 mad/i,Programming Language
 magik,Programming Language
 magma,Programming Language
-make,Programming Language
 maple,Programming Language
 mapper now part of bis,Programming Language
 mark-iv now vision:builder,Programming Language
@@ -552,7 +546,6 @@ rtl/2,Programming Language
 ruby,Programming Language
 runescript,Programming Language
 rust,Programming Language
-s,Programming Language
 s-lang,Programming Language
 s-plus,Programming Language
 s/sl,Programming Language
@@ -613,14 +606,11 @@ stata,Programming Language
 stateflow,Programming Language
 strand,Programming Language
 subtext,Programming Language
-supercollider,Programming Language
-supertalk,Programming Language
 swift (apple programming language),Programming Language
 swift (parallel scripting language),Programming Language
 sympl,Programming Language
 synccharts,Programming Language
 systemverilog,Programming Language
-t,Programming Language
 t-sql,Programming Language
 tacl,Programming Language
 tacpol,Programming Language
@@ -890,7 +880,6 @@ operating-systems,Programming Concept
 operating-system,Programming Concept
 code,Programming Concept
 debugged,Programming Concept
-maintenance,Programming Concept
 applications,Programming Concept
 servers,Programming Concept
 repositories,Programming Concept
