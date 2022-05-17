@@ -9,8 +9,10 @@ object SparqlUtil {
     val sparqlQuery = new ParameterizedSparqlString(""
       + "prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n"
       + "prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
-      + "PREFIX dbo:     <http://dbpedia.org/ontology/>"
-      + "\n"
+      + "prefix dbo:     <http://dbpedia.org/ontology/>\n"
+      + "prefix yago:     <http://yago-knowledge.org/resource/>\n"
+      + "prefix dbc:      <http://dbpedia.org/resource/Category:>\n"
+      + "prefix dct: <http://purl.org/dc/terms/>\n"
       + queryString)
 
 
