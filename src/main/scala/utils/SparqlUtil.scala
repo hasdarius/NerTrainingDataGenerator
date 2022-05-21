@@ -1,4 +1,4 @@
-package sparql
+package utils
 
 import org.apache.jena.query.{ParameterizedSparqlString, QueryExecutionFactory, ResultSet}
 
@@ -19,6 +19,26 @@ object SparqlUtil {
     val queryExecutionFactory = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", sparqlQuery.asQuery)
 
     queryExecutionFactory.execSelect
+  }
+
+  def getInstanceConceptTupleSetFromDbpedia(label: String, query: String, stringFilter: String => Boolean): List[(String, String)] = {
+
+    val results = SparqlUtil.querySparql(query)
+    var resultSet: Set[String] = Set.empty
+
+    while (results.hasNext) {
+      resultSet += results.next.get("pl").toString
+    }
+    resultSet
+      .toList
+      .sortWith(_.compareTo(_) < 0)
+      .map(result => result.substring(result.lastIndexOf("/") + 1))
+      .filter(stringFilter)
+      .map(result => result
+        .toLowerCase
+        .replace("_", "-") // this is how we link composite words in our training data
+        .replaceAll("-\\([^()]*\\)", "")) // remove paranthesis from names such as: apache-spark-(framework) -> apache-spark
+      .map(result => (result, label))
   }
 
 }
