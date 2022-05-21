@@ -1,0 +1,908 @@
+Instance,Concept
+"tmg",Programming Language
+watfiv",Programming Language
+@formula,Programming Language
+a# (axiom),Programming Language
+a# .net,Programming Language
+a+,Programming Language
+a++,Programming Language
+a-0 system,Programming Language
+abap,Programming Language
+abc,Programming Language
+abc algol,Programming Language
+abset,Programming Language
+absys,Programming Language
+acc,Programming Language
+accent,Programming Language
+ace dasl,Programming Language
+acl2,Programming Language
+act-iii,Programming Language
+action!,Programming Language
+actionscript,Programming Language
+ada,Programming Language
+adenine,Programming Language
+agda,Programming Language
+agilent vee,Programming Language
+agora,Programming Language
+aimms,Programming Language
+alef,Programming Language
+alf,Programming Language
+algol 58,Programming Language
+algol 60,Programming Language
+algol 68,Programming Language
+algol w,Programming Language
+alice,Programming Language
+alma-0,Programming Language
+ambienttalk,Programming Language
+amiga e,Programming Language
+amos,Programming Language
+ampl,Programming Language
+apex (salesforce.com),Programming Language
+apl,Programming Language
+app inventor for android's visual block language,Programming Language
+applescript,Programming Language
+arc,Programming Language
+arexx,Programming Language
+argus,Programming Language
+aspectj,Programming Language
+assembly language,Programming Language
+ateji px,Programming Language
+ats,Programming Language
+autocoder,Programming Language
+autohotkey,Programming Language
+autoit,Programming Language
+autolisp / visual lisp,Programming Language
+averest,Programming Language
+awk,Programming Language
+axum,Programming Language
+babbage,Programming Language
+bash,Programming Language
+bash and,Programming Language
+batch (windows/dos),Programming Language
+bc,Programming Language
+bcpl,Programming Language
+beanshell,Programming Language
+bertrand,Programming Language
+beta,Programming Language
+bigwig,Programming Language
+bistro,Programming Language
+bitc,Programming Language
+bliss,Programming Language
+blockly,Programming Language
+bloop,Programming Language
+blue,Programming Language
+boo,Programming Language
+boomerang,Programming Language
+bourne shell (including,Programming Language
+bpel,Programming Language
+brew,Programming Language
+c,Programming Language
+c shell,Programming Language
+c#,Programming Language
+c++,Programming Language
+c--,Programming Language
+c/al,Programming Language
+caché objectscript,Programming Language
+caml,Programming Language
+cayenne,Programming Language
+cduce,Programming Language
+cecil,Programming Language
+cel,Programming Language
+cesil,Programming Language
+ceylon,Programming Language
+cfengine,Programming Language
+cfml,Programming Language
+cg,Programming Language
+ch,Programming Language
+chain,Programming Language
+chapel,Programming Language
+charity,Programming Language
+charm,Programming Language
+chef,Programming Language
+chill,Programming Language
+chip-8,Programming Language
+chomski,Programming Language
+chuck,Programming Language
+cics,Programming Language
+cil,Programming Language
+cilk,Programming Language
+citrine (programming language),Programming Language
+cl (ibm),Programming Language
+claire,Programming Language
+clarion,Programming Language
+clipper,Programming Language
+clist,Programming Language
+clojure,Programming Language
+clu,Programming Language
+cms exec (exec),Programming Language
+cms-2,Programming Language
+cobol – iso/iec 1989,Programming Language
+cobra,Programming Language
+coffeescript,Programming Language
+coldfusion,Programming Language
+comal,Programming Language
+combined programming language (cpl),Programming Language
+comit,Programming Language
+common intermediate language (cil),Programming Language
+common lisp (also known as cl),Programming Language
+compass,Programming Language
+component pascal,Programming Language
+constraint handling rules (chr),Programming Language
+converge,Programming Language
+cool,Programming Language
+coq,Programming Language
+coral 66,Programming Language
+corn,Programming Language
+corvision,Programming Language
+cowsel,Programming Language
+cpl,Programming Language
+cryptol,Programming Language
+csh,Programming Language
+csound,Programming Language
+csp,Programming Language
+css,Programming Language
+css3,Programming Language
+cuda,Programming Language
+curl,Programming Language
+curry,Programming Language
+cyclone,Programming Language
+cython,Programming Language
+dart,Programming Language
+dasl (datapoint's advanced systems language),Programming Language
+dasl (distributed application specification language),Programming Language
+dataflex,Programming Language
+datalog,Programming Language
+datatrieve,Programming Language
+dbase,Programming Language
+dc,Programming Language
+dcl,Programming Language
+deesel (formerly g),Programming Language
+delphi,Programming Language
+dibol,Programming Language
+dinkc,Programming Language
+dog,Programming Language
+draco,Programming Language
+drakon,Programming Language
+dylan,Programming Language
+dynamo,Programming Language
+ease,Programming Language
+easy pl/i,Programming Language
+easy programming language,Programming Language
+easytrieve plus,Programming Language
+ecmascript,Programming Language
+edinburgh imp,Programming Language
+egl,Programming Language
+eiffel,Programming Language
+elan,Programming Language
+elixir,Programming Language
+elm,Programming Language
+emacs lisp,Programming Language
+emerald,Programming Language
+epigram,Programming Language
+epl,Programming Language
+erlang,Programming Language
+es,Programming Language
+escher,Programming Language
+espol,Programming Language
+esterel,Programming Language
+etoys,Programming Language
+euclid,Programming Language
+euler,Programming Language
+euphoria,Programming Language
+euslisp robot programming language,Programming Language
+exec 2,Programming Language
+executable uml,Programming Language
+f,Programming Language
+f#,Programming Language
+f-script,Programming Language
+factor,Programming Language
+falcon,Programming Language
+fantom,Programming Language
+faust,Programming Language
+ffp,Programming Language
+fjölnir,Programming Language
+fl,Programming Language
+flavors,Programming Language
+flex,Programming Language
+floop,Programming Language
+flow-matic,Programming Language
+focal,Programming Language
+focus,Programming Language
+foil,Programming Language
+formac,Programming Language
+forth,Programming Language
+fortran – iso/iec 1539,Programming Language
+fortress,Programming Language
+foxbase,Programming Language
+foxpro,Programming Language
+fp,Programming Language
+fpr,Programming Language
+franz lisp,Programming Language
+frege,Programming Language
+g-code,Programming Language
+game maker language,Programming Language
+gamemonkey script,Programming Language
+gams,Programming Language
+gap,Programming Language
+gdl,Programming Language
+genie,Programming Language
+george,Programming Language
+gj,Programming Language
+glsl,Programming Language
+gm,Programming Language
+gnu e,Programming Language
+go,Programming Language
+go!,Programming Language
+goal,Programming Language
+godiva,Programming Language
+golo,Programming Language
+gom (good old mad),Programming Language
+google apps script,Programming Language
+gosu,Programming Language
+gotran,Programming Language
+gpss,Programming Language
+graphtalk,Programming Language
+grass,Programming Language
+groovy,Programming Language
+godel,Programming Language
+hack,Programming Language
+hal/s,Programming Language
+hamilton c shell,Programming Language
+harbour,Programming Language
+hartmann pipelines,Programming Language
+haskell,Programming Language
+haxe,Programming Language
+high level assembly,Programming Language
+hlsl,Programming Language
+hop,Programming Language
+hope,Programming Language
+hopscotch,Programming Language
+html,Programming Language
+html5,Programming Language
+hugo,Programming Language
+hume,Programming Language
+hypertalk,Programming Language
+ibm basic assembly language,Programming Language
+ibm hascript,Programming Language
+ibm informix-4gl,Programming Language
+ibm rpg,Programming Language
+ici,Programming Language
+icon,Programming Language
+id,Programming Language
+idl,Programming Language
+idris,Programming Language
+imp,Programming Language
+io,Programming Language
+ioke,Programming Language
+ipl,Programming Language
+iptscrae,Programming Language
+islisp,Programming Language
+ispf,Programming Language
+iswim,Programming Language
+j,Programming Language
+j#,Programming Language
+j++,Programming Language
+jade,Programming Language
+jako,Programming Language
+jal,Programming Language
+janus (concurrent constraint programming language),Programming Language
+janus (time-reversible computing programming language),Programming Language
+jass,Programming Language
+java,Programming Language
+javafx script,Programming Language
+javascript,Programming Language
+jcl,Programming Language
+jean,Programming Language
+join java,Programming Language
+joss,Programming Language
+joule,Programming Language
+jovial,Programming Language
+joy,Programming Language
+jscript,Programming Language
+jscript .net,Programming Language
+julia,Programming Language
+jython,Programming Language
+kaleidoscope,Programming Language
+karel,Programming Language
+karel++,Programming Language
+kee,Programming Language
+kif,Programming Language
+kixtart,Programming Language
+klerer-may system,Programming Language
+kojo,Programming Language
+kotlin,Programming Language
+krc,Programming Language
+krl,Programming Language
+krypton,Programming Language
+ksh,Programming Language
+ksh ),Programming Language
+kuka robot language),Programming Language
+l# .net,Programming Language
+labview,Programming Language
+ladder,Programming Language
+lagoona,Programming Language
+lansa,Programming Language
+lasso,Programming Language
+latex,Programming Language
+lava,Programming Language
+lc-3,Programming Language
+leda,Programming Language
+legoscript,Programming Language
+lil,Programming Language
+lilypond,Programming Language
+limbo,Programming Language
+limnor,Programming Language
+linc,Programming Language
+lingo,Programming Language
+lis,Programming Language
+lisa,Programming Language
+lisaac,Programming Language
+lisp – iso/iec 13816,Programming Language
+lite-c,Programming Language
+lithe,Programming Language
+little b,Programming Language
+livecode,Programming Language
+livescript,Programming Language
+logo,Programming Language
+logtalk,Programming Language
+lotusscript,Programming Language
+lpc,Programming Language
+lse,Programming Language
+lsl,Programming Language
+lua,Programming Language
+lucid,Programming Language
+lustre,Programming Language
+lyapas,Programming Language
+lynx,Programming Language
+m#,Programming Language
+m2001,Programming Language
+m4,Programming Language
+machine code,Programming Language
+macsyma ),Programming Language
+mad (michigan algorithm decoder),Programming Language
+mad/i,Programming Language
+magik,Programming Language
+magma,Programming Language
+maple,Programming Language
+mapper now part of bis,Programming Language
+mark-iv now vision:builder,Programming Language
+marscode (programming language),Programming Language
+mary,Programming Language
+masm microsoft assembly x86,Programming Language
+math-matic,Programming Language
+mathematica,Programming Language
+matlab,Programming Language
+max (max msp – graphical programming environment),Programming Language
+maxima (see also,Programming Language
+maxscript internal language 3d studio max,Programming Language
+maya (mel),Programming Language
+mdl,Programming Language
+mercury,Programming Language
+mesa,Programming Language
+metacard,Programming Language
+metafont,Programming Language
+microcode,Programming Language
+microscript,Programming Language
+miis,Programming Language
+millscript,Programming Language
+mimic,Programming Language
+mirah,Programming Language
+miranda,Programming Language
+miva script,Programming Language
+ml,Programming Language
+moby,Programming Language
+model 204,Programming Language
+modelica,Programming Language
+modula,Programming Language
+modula-2,Programming Language
+modula-3,Programming Language
+mohol,Programming Language
+moo,Programming Language
+mortran,Programming Language
+mouse,Programming Language
+mpd,Programming Language
+msl,Programming Language
+mumps,Programming Language
+mystic programming language (mpl),Programming Language
+napier88,Programming Language
+nasm,Programming Language
+neko,Programming Language
+nemerle,Programming Language
+nesc,Programming Language
+nesl,Programming Language
+net.data,Programming Language
+netlogo,Programming Language
+netrexx,Programming Language
+newlisp,Programming Language
+newp,Programming Language
+newspeak,Programming Language
+newtonscript,Programming Language
+ngl,Programming Language
+nial,Programming Language
+nice,Programming Language
+nickle,Programming Language
+nim,Programming Language
+not exactly c (nxc),Programming Language
+not quite c (nqc),Programming Language
+npl,Programming Language
+nsis,Programming Language
+nu,Programming Language
+nwscript,Programming Language
+nxt-g,Programming Language
+o:xml,Programming Language
+oak,Programming Language
+oberon,Programming Language
+obj2,Programming Language
+object lisp,Programming Language
+object pascal,Programming Language
+object rexx,Programming Language
+objective-c,Programming Language
+objective-j,Programming Language
+objectlogo,Programming Language
+obliq,Programming Language
+ocaml,Programming Language
+occam,Programming Language
+occam-π,Programming Language
+octave,Programming Language
+omnimark,Programming Language
+onyx,Programming Language
+opa,Programming Language
+opal,Programming Language
+opencl,Programming Language
+openedge abl,Programming Language
+opl,Programming Language
+ops5,Programming Language
+optimj,Programming Language
+orc,Programming Language
+orca/modula-2,Programming Language
+oriel,Programming Language
+orwell,Programming Language
+oxygene,Programming Language
+oz,Programming Language
+p#,Programming Language
+parasail (programming language),Programming Language
+pari/gp,Programming Language
+pascal – iso 7185,Programming Language
+pcastl,Programming Language
+pcf,Programming Language
+pdl,Programming Language
+pearl,Programming Language
+peoplecode,Programming Language
+perl,Programming Language
+perl6,Programming Language
+pharo,Programming Language
+php,Programming Language
+phrogram,Programming Language
+pico,Programming Language
+picolisp,Programming Language
+pict,Programming Language
+pike,Programming Language
+pikt,Programming Language
+pilot,Programming Language
+pipelines,Programming Language
+pizza,Programming Language
+pl-11,Programming Language
+pl/0,Programming Language
+pl/b,Programming Language
+pl/c,Programming Language
+pl/i – iso 6160,Programming Language
+pl/m,Programming Language
+pl/p,Programming Language
+pl/sql,Programming Language
+pl360,Programming Language
+planc,Programming Language
+plankalkül,Programming Language
+planner,Programming Language
+plex,Programming Language
+plexil,Programming Language
+pop-11,Programming Language
+portable,Programming Language
+postscript,Programming Language
+powerbuilder – 4gl gui applcation generator from sybase,Programming Language
+powerhouse,Programming Language
+powershell,Programming Language
+ppl,Programming Language
+pro*c,Programming Language
+processing,Programming Language
+processing.js,Programming Language
+prograph,Programming Language
+proiv,Programming Language
+prolog,Programming Language
+promal,Programming Language
+promela,Programming Language
+prose modeling language,Programming Language
+protel,Programming Language
+providex,Programming Language
+pure,Programming Language
+python,Programming Language
+p′′,Programming Language
+q (equational programming language),Programming Language
+q (programming language from kx systems),Programming Language
+qalb,Programming Language
+qpl,Programming Language
+qtscript,Programming Language
+quakec,Programming Language
+r,Programming Language
+r++,Programming Language
+racket,Programming Language
+rapid,Programming Language
+rapira,Programming Language
+ratfiv,Programming Language
+ratfor,Programming Language
+rc,Programming Language
+rebol,Programming Language
+red,Programming Language
+redcode,Programming Language
+refal,Programming Language
+reia,Programming Language
+revolution,Programming Language
+rexx,Programming Language
+rlab,Programming Language
+roop,Programming Language
+rpg,Programming Language
+rpl,Programming Language
+rsl,Programming Language
+rtl/2,Programming Language
+ruby,Programming Language
+runescript,Programming Language
+rust,Programming Language
+s-lang,Programming Language
+s-plus,Programming Language
+s/sl,Programming Language
+s2,Programming Language
+s3,Programming Language
+sa-c,Programming Language
+sabretalk,Programming Language
+sail,Programming Language
+salsa,Programming Language
+sam76,Programming Language
+sas,Programming Language
+sasl,Programming Language
+sather,Programming Language
+sawzall,Programming Language
+sbl,Programming Language
+scala,Programming Language
+scheme,Programming Language
+scilab,Programming Language
+scratch,Programming Language
+script.net,Programming Language
+sed,Programming Language
+seed7,Programming Language
+self,Programming Language
+sensetalk,Programming Language
+sequencel,Programming Language
+setl,Programming Language
+signal,Programming Language
+simple,Programming Language
+simpol,Programming Language
+simscript,Programming Language
+simula,Programming Language
+simulink,Programming Language
+sisal,Programming Language
+slip,Programming Language
+small,Programming Language
+small basic,Programming Language
+smalltalk,Programming Language
+sml,Programming Language
+snap!,Programming Language
+snobol (,Programming Language
+snowball,Programming Language
+sol,Programming Language
+sp/k,Programming Language
+span,Programming Language
+spark,Programming Language
+speedcode,Programming Language
+spin,Programming Language
+spitbol ),Programming Language
+sps,Programming Language
+sql,Programming Language
+sqr,Programming Language
+squeak,Programming Language
+squirrel,Programming Language
+sr,Programming Language
+stackless python,Programming Language
+starlogo,Programming Language
+stata,Programming Language
+stateflow,Programming Language
+strand,Programming Language
+subtext,Programming Language
+swift (apple programming language),Programming Language
+swift (parallel scripting language),Programming Language
+sympl,Programming Language
+synccharts,Programming Language
+systemverilog,Programming Language
+t-sql,Programming Language
+tacl,Programming Language
+tacpol,Programming Language
+tads,Programming Language
+tal,Programming Language
+tcl,Programming Language
+tea,Programming Language
+teco,Programming Language
+telcomp,Programming Language
+tex,Programming Language
+tie,Programming Language
+timber,Programming Language
+tom,Programming Language
+topspeed,Programming Language
+touchdevelop,Programming Language
+tpu,Programming Language
+trac,Programming Language
+ttcn,Programming Language
+ttm,Programming Language
+turbo c++,Programming Language
+turing,Programming Language
+tutor,Programming Language
+txl,Programming Language
+typescript,Programming Language
+ubercode,Programming Language
+ucsd pascal,Programming Language
+umple,Programming Language
+unicon,Programming Language
+uniface,Programming Language
+unity,Programming Language
+unix shell,Programming Language
+unrealscript,Programming Language
+vala,Programming Language
+visual dataflex,Programming Language
+visual dialogscript,Programming Language
+visual fortran,Programming Language
+visual foxpro,Programming Language
+visual j#,Programming Language
+visual j++,Programming Language
+visual objects,Programming Language
+visual prolog,Programming Language
+vsxu,Programming Language
+vvvv,Programming Language
+webdna,Programming Language
+webql,Programming Language
+whiley,Programming Language
+winbatch,Programming Language
+windows powershell,Programming Language
+wolfram language,Programming Language
+wyvern,Programming Language
+x#,Programming Language
+x++,Programming Language
+x10,Programming Language
+xbl,Programming Language
+xc (exploits,Programming Language
+xharbour,Programming Language
+xl,Programming Language
+xmos architecture ),Programming Language
+xojo,Programming Language
+xotcl,Programming Language
+xpath,Programming Language
+xpl,Programming Language
+xpl0,Programming Language
+xquery,Programming Language
+xsb,Programming Language
+xtend,Programming Language
+yorick,Programming Language
+yql,Programming Language
+z notation,Programming Language
+zeno,Programming Language
+zopl,Programming Language
+zpl,Programming Language
+zsh,Programming Language
+js,Programming Language
+pl,Programming Language
+google-cloud-certification,Certification
+databricks-certified-data-engineer,Certification
+oracle-oca-certification,Certification
+oca,Certification
+ocp,Certification
+architect,Seniority
+intern,Seniority
+junior,Seniority
+mid,Seniority
+senior,Seniority
+tech-lead,Seniority
+.net,Tool/Framework
+airflow,Tool/Framework
+amazon-web-services,Tool/Framework
+android,Tool/Framework
+angular,Tool/Framework
+apache-kafka,Tool/Framework
+apache-tomcat,Tool/Framework
+postman,Tool/Framework
+asp.net,Tool/Framework
+aws,Tool/Framework
+aws-route,Tool/Framework
+azure,Tool/Framework
+azure-cloud-service,Tool/Framework
+blockchain,Tool/Framework
+bootstrap,Tool/Framework
+bower,Tool/Framework
+cassandra,Tool/Framework
+cloud,Tool/Framework
+cloud-front,Tool/Framework
+cucumber,Tool/Framework
+django,Tool/Framework
+docker,Tool/Framework
+elastic-load-balancer,Tool/Framework
+elastic-search,Tool/Framework
+elasticsearch,Tool/Framework
+flask,Tool/Framework
+gcp,Tool/Framework
+gherkin,Tool/Framework
+git,Tool/Framework
+google-cloud,Tool/Framework
+gradle,Tool/Framework
+grafana,Tool/Framework
+grunt,Tool/Framework
+gulp,Tool/Framework
+hadoop,Tool/Framework
+hibernate,Tool/Framework
+javaee,Tool/Framework
+jboss,Tool/Framework
+jenkins,Tool/Framework
+jpa,Tool/Framework
+jquery,Tool/Framework
+junit,Tool/Framework
+kafka,Tool/Framework
+kanban,Tool/Framework
+keras,Tool/Framework
+kubernetes,Tool/Framework
+laravel,Tool/Framework
+linux,Tool/Framework
+maven,Tool/Framework
+microsoft-azure,Tool/Framework
+mockito,Tool/Framework
+mongodb,Tool/Framework
+mysql,Tool/Framework
+nginx,Tool/Framework
+node.js,Tool/Framework
+numpy,Tool/Framework
+oracle,Tool/Framework
+pandas,Tool/Framework
+posgres,Tool/Framework
+rabbitmq,Tool/Framework
+react,Tool/Framework
+reactnative,Tool/Framework
+redis,Tool/Framework
+ruby-on-rails,Tool/Framework
+scikit-learn,Tool/Framework
+selenium,Tool/Framework
+selenium-web-driver,Tool/Framework
+spark,Tool/Framework
+spring,Tool/Framework
+spring-jpa,Tool/Framework
+spring-security,Tool/Framework
+springboot,Tool/Framework
+sqlserver,Tool/Framework
+swift,Tool/Framework
+tensorflow,Tool/Framework
+teradata,Tool/Framework
+terraform,Tool/Framework
+tomcat,Tool/Framework
+vuejs,Tool/Framework
+websphere,Tool/Framework
+data-engineer,IT Specialization
+data-engineers,IT Specialization
+data-scientist,IT Specialization
+developer,IT Specialization
+developers,IT Specialization
+devops,IT Specialization
+dev-ops,IT Specialization
+engineer,IT Specialization
+engineers,IT Specialization
+frontend-developer,IT Specialization
+full-stack-developer,IT Specialization
+machine-learning-engineer,IT Specialization
+software-developer,IT Specialization
+software-developers,IT Specialization
+software-engineer,IT Specialization
+software-engineers,IT Specialization
+agile,Programming Concept
+algorithms,Programming Concept
+api,Programming Concept
+artificial-intelligence,Programming Concept
+authentication,Programming Concept
+authorization,Programming Concept
+automation-tests,Programming Concept
+automotive,Programming Concept
+big-data,Programming Concept
+cd,Programming Concept
+certification,Programming Concept
+certified,Programming Concept
+ci,Programming Concept
+client-server,Programming Concept
+code-reviews,Programming Concept
+continuous-deployment,Programming Concept
+continuous-integration,Programming Concept
+data-structures,Programming Concept
+database,Programming Concept
+datalake,Programming Concept
+db,Programming Concept
+deployment,Programming Concept
+design-pattern,Programming Concept
+development,Programming Concept
+framework,Programming Concept
+function,Programming Concept
+functional-programming,Programming Concept
+imperative-programmming,Programming Concept
+ios,Programming Concept
+knowledge-graph,Programming Concept
+machine-learning,Programming Concept
+mobile,Programming Concept
+mobile-development,Programming Concept
+mvc,Programming Concept
+natural-language-generation,Programming Concept
+natural-language-processing,Programming Concept
+nosql,Programming Concept
+nosql-databases,Programming Concept
+object-oriented-programming,Programming Concept
+oop,Programming Concept
+orm,Programming Concept
+peer-to-peer,Programming Concept
+relational-databases,Programming Concept
+rest,Programming Concept
+rest-services,Programming Concept
+rup,Programming Concept
+scrum,Programming Concept
+security,Programming Concept
+stored-procedures,Programming Concept
+tdd,Programming Concept
+waterfall,Programming Concept
+web-applications,Programming Concept
+programming,Programming Concept
+integration,Programming Concept
+deployment,Programming Concept
+ide,Programming Concept
+shell,Programming Concept
+script,Programming Concept
+j2ee,Tool/Framework
+jsp,Tool/Framework
+test-driven,Programming Concept
+clean-code,Programming Concept
+web-apps,Programming Concept
+web-application,Programming Concept
+software,Programming Concept
+databases,Programming Concept
+shell-script,Programming Concept
+shell-scripts,Programming Concept
+shell-scripting,Programming Concept
+webserver,Programming Concept
+application,Programming Concept
+file,Programming Concept
+backup,Programming Concept
+module,Programming Concept
+modules,Programming Concept
+testing,Programming Concept
+unit-testing,Programming Concept
+unit-tests,Programming Concept
+backend,Programming Concept
+frontend,Programming Concept
+middleware,Programming Concept
+bug,Programming Concept
+bugs,Programming Concept
+operating-systems,Programming Concept
+operating-system,Programming Concept
+code,Programming Concept
+debugged,Programming Concept
+applications,Programming Concept
+servers,Programming Concept
+repositories,Programming Concept
+repository,Programming Concept
+branch,Programming Concept
+branches,Programming Concept
+merging,Programming Concept
+merge,Programming Concept
+scripts,Programming Concept
+server,Programming Concept
+information-technology,Programming Concept
+embedded,Programming Concept
+automation,Programming Concept
+debug,Programming Concept
+scripting,Programming Concept
+windows,Tool/Framework
+centos,Tool/Framework
+ant,Tool/Framework
+putty,Tool/Framework
+ms,Tool/Framework
+azureweb,Tool/Framework
+azurewebservices,Tool/Framework
+eclipse,Tool/Framework
+sonarqube,Tool/Framework
+win,Tool/Framework
+bitbucket,Tool/Framework
