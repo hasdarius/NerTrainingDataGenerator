@@ -776,6 +776,7 @@ teradata,Tool/Framework
 terraform,Tool/Framework
 tomcat,Tool/Framework
 vuejs,Tool/Framework
+vue.js,Tool/Framework
 websphere,Tool/Framework
 data-engineer,IT Specialization
 data-engineers,IT Specialization
@@ -837,6 +838,7 @@ orm,Programming Concept
 peer-to-peer,Programming Concept
 relational-databases,Programming Concept
 rest,Programming Concept
+restful,Programming Concept
 rest-services,Programming Concept
 rup,Programming Concept
 scrum,Programming Concept
