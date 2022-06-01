@@ -110,8 +110,8 @@ node.js,Tool/Framework
 numpy,Tool/Framework
 oracle,Tool/Framework
 pandas,Tool/Framework
-posgres,Tool/Framework
-posgresql,Tool/Framework
+postgres,Tool/Framework
+postgresql,Tool/Framework
 rabbitmq,Tool/Framework
 react,Tool/Framework
 reactnative,Tool/Framework
