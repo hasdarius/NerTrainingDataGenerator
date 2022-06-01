@@ -40,6 +40,7 @@ mid,Seniority
 senior,Seniority
 tech-lead,Seniority
 .net,Tool/Framework
+.net-core,Tool/Framework
 airflow,Tool/Framework
 amazon-web-services,Tool/Framework
 excel,Tool/Framework
@@ -128,6 +129,8 @@ spring-jpa,Tool/Framework
 spring-security,Tool/Framework
 springboot,Tool/Framework
 spring-boot,Tool/Framework
+spring-data,Tool/Framework
+spring-cloud,Tool/Framework
 springmvc,Tool/Framework
 sqlserver,Tool/Framework
 swift,Tool/Framework
@@ -321,3 +324,4 @@ win,Tool/Framework
 bitbucket,Tool/Framework
 ec2,Tool/Framework
 rds,Tool/Framework
+sql-server,Tool/Framework
