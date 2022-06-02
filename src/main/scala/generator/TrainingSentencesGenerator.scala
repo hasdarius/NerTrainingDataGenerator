@@ -1,19 +1,14 @@
 package generator
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import utils.FileUtil
 
 import scala.util.Random
 
 object TrainingSentencesGenerator {
-  def generateTrainingSentences(spark: SparkSession, numberOfSentences: Int = 100):Unit={
-    val concepts = spark
-      .read
-      .option("header", "false")
-      .csv("data/conceptsDbpedia.csv")
-
+  def generateTrainingSentences(concepts: DataFrame, numberOfSentences: Int = 100):Unit={
     val conceptList = concepts
-      .select("_c0")
+      .select(instanceColumn)
       .distinct()
       .collect()
       .toList

@@ -1,4 +1,10 @@
 package object generator {
+
+  val instanceColumn = "Instance"
+  val conceptColumn = "Concept"
+  val sentenceColumn = "Sentence"
+  val typeColumn = "Type"
+
   val toolsAndFrameworksQuery: String =
     """SELECT ?pl ?p2 ?label
       |    WHERE {
@@ -24,5 +30,15 @@ package object generator {
       |        UNION
       |       {?pl dct:subject	dbc:Information_technology_qualifications .}
       |        FILTER (LANG(?label)='en')}""".stripMargin
+
+  val conceptsQuery: String =
+    """SELECT ?pl ?p2 ?label
+      |    WHERE {
+      |        ?p2 rdfs:label ?label .
+      |        ?p2 rdf:type dbo:ProgrammingLanguage .
+      |        ?p2 dbp:paradigm ?pl .
+      |        FILTER (LANG(?label)='en')
+      |    }
+      |""".stripMargin
 
 }
