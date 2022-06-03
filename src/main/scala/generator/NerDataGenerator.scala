@@ -1,7 +1,7 @@
 package generator
 
-import org.apache.spark.sql.{DataFrame, Row}
-import utils.FileUtil
+import org.apache.spark.sql.DataFrame
+import utils.FileUtil.writeListOfTuplesToFile
 import utils.SparkUtil.getListOfDifferentValuesFromColumn
 
 object NerDataGenerator {
@@ -17,7 +17,7 @@ object NerDataGenerator {
 
     sentenceTypeList.foreach(sentenceType => {
       val sentences = getListOfDifferentValuesFromColumn(sentencesDataFrame, sentenceColumn, _ (0) == sentenceType)
-      FileUtil.writeListOfTuplesToFile(sentenceType + ".csv", sentences
+      writeListOfTuplesToFile(sentenceType + ".csv", sentences
         .map(string => string.replace(",", " ,")
           .replace(".", " .")
           .replaceAll(" (\\.[a-zA-Z])", "$1")
@@ -25,7 +25,8 @@ object NerDataGenerator {
           .replace(")", " )"))
         .flatMap(_.split(" "))
         .map(_.trim)
-        .map(generateTuple), append = false)
+        .map(generateTuple)
+        .map(tuple => tuple._1 + "," + tuple._2), append = false)
     })
 
     def generateTuple(word: String): (String, String) = {

@@ -1,4 +1,4 @@
-import generator.KnowledgeGraphGenerator.generateKnowledgeGraph
+import generator.KnowledgeGraphComponentsGenerator.generateKnowledgeGraph
 import generator.NerDataGenerator.generateTaggedDataForTrainingNer
 import generator.SparqlConceptsGenerator.updateSystemConcepts
 import generator.TrainingSentencesGenerator.generateTrainingSentences
@@ -39,7 +39,7 @@ object Main extends App {
 
 
   //generateTrainingSentences(conceptsDataFrame)
-  //generateTaggedDataForTrainingNer(conceptsDataFrame, sentencesDataFrame)
-  generateKnowledgeGraph(spark, conceptsDataFrame)
+  generateTaggedDataForTrainingNer(conceptsDataFrame, sentencesDataFrame)
+  generateKnowledgeGraph(conceptsDataFrame)
 
 }
