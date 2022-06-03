@@ -24,6 +24,7 @@ certification,Certification
 certified,Certification
 master,Certification
 masters,Certification
+bachelor,Certification
 university-degree,Certification
 bachelor-degree-in-computer-science,Certification
 master-degree-in-computer-science,Certification
@@ -40,6 +41,7 @@ mid,Seniority
 senior,Seniority
 tech-lead,Seniority
 .net,Tool/Framework
+.net-core,Tool/Framework
 airflow,Tool/Framework
 amazon-web-services,Tool/Framework
 excel,Tool/Framework
@@ -109,8 +111,8 @@ node.js,Tool/Framework
 numpy,Tool/Framework
 oracle,Tool/Framework
 pandas,Tool/Framework
-posgres,Tool/Framework
-posgresql,Tool/Framework
+postgres,Tool/Framework
+postgresql,Tool/Framework
 rabbitmq,Tool/Framework
 react,Tool/Framework
 reactnative,Tool/Framework
@@ -128,6 +130,8 @@ spring-jpa,Tool/Framework
 spring-security,Tool/Framework
 springboot,Tool/Framework
 spring-boot,Tool/Framework
+spring-data,Tool/Framework
+spring-cloud,Tool/Framework
 springmvc,Tool/Framework
 sqlserver,Tool/Framework
 swift,Tool/Framework
@@ -321,3 +325,4 @@ win,Tool/Framework
 bitbucket,Tool/Framework
 ec2,Tool/Framework
 rds,Tool/Framework
+sql-server,Tool/Framework
