@@ -25,24 +25,12 @@ object KnowledgeGraphComponentsGenerator {
           .toList
     )
 
-    val programmingLanguages = (conceptProgrammingLanguageRelationshipSet ++ toolProgrammingLanguageRelationshipSet)
-      .map(tuple => (tuple._2, "Programming Language"))
-      .groupBy(_._1)
-      .values
-      .map(_.head)
-      .toList
-    val concepts = conceptProgrammingLanguageRelationshipSet.map(tuple => (tuple._1, "Programming Concept"))
-    val tools = toolProgrammingLanguageRelationshipSet.map(tuple => (tuple._1, "Tool/Framework"))
+    val edges = generateEdgeSet(conceptProgrammingLanguageRelationshipSet, "influences") ++
+      generateEdgeSet(toolProgrammingLanguageRelationshipSet, "uses") ++
+      generateEdgeSet(programmingLanguagesList.map((_, "Programming Language")).toSet, "isA") ++
+      generateEdgeSet(toolsList.map((_, "Tool/Framework")).toSet, "isA") ++
+      generateEdgeSet(conceptsList.map((_, "Programming Concept")).toSet, "isA")
 
-    val vertices = (programmingLanguages ++ concepts ++ tools)
-      .zipWithIndex
-      .map {
-        case ((instance, label), id) => (id.toString, instance, label)
-      }
-    val edges = generateEdgeSet(toolProgrammingLanguageRelationshipSet, vertices, "uses", "used by") ++
-      generateEdgeSet(conceptProgrammingLanguageRelationshipSet, vertices, "influences", "influenced by")
-
-    writeListOfTuplesToFile("vertices.csv", vertices.map(tuple => tuple._1 + "," + tuple._2 + "," + tuple._3), append = false)
-    writeListOfTuplesToFile("edges.csv", edges.map(tuple => tuple._1 + "," + tuple._2 + "," + tuple._3), append = false)
+    writeListOfTuplesToFile("edges.csv", edges.map(tuple => tuple._1 + "," + tuple._2 + "," + tuple._3).toList, append = false)
   }
 }
