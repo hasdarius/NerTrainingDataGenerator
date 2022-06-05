@@ -38,7 +38,7 @@ object KnowledgeGraphComponentsGenerator {
           .toList
     )
 
-    val edges = generateEdgeSet(conceptProgrammingLanguageRelationshipSet.map(_.swap), "influences") ++
+    val edges = generateEdgeSet(conceptProgrammingLanguageRelationshipSet.map(_.swap), "isInfluencedBy") ++
       generateEdgeSet(toolProgrammingLanguageRelationshipSet, "uses") ++
       generateEdgeSet(programmingLanguagesList.map((_, "Programming Language")).toSet, "isA") ++
       generateEdgeSet(toolsList.map((_, "Tool/Framework")).toSet, "isA") ++
