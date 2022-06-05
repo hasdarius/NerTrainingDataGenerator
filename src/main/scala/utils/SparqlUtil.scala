@@ -61,17 +61,19 @@ object SparqlUtil {
       .replace("_", "-") // this is how we link composite words in our training data
       .replaceAll("-\\([^()]*\\)", "") // remove paranthesis from names such as: apache-spark-(framework) -> apache-spark
 
-  def preProcessConceptResult(string: String): Array[String] = {
-    string
+  def preProcessConceptResult(conceptTuple: (String, String)): List[(String, String)] = {
+    val conceptInstance = conceptTuple._1
+    val conceptLabel = conceptTuple._2
+
+    conceptInstance
       .replace("multi-paradigm: ", "")
-      .replace(".", "")
-      .replace("@en", "")
-      .replace(":", ",")
-      .replace("and", ",")
+      .replaceAll("\\.|@en", "")
+      .replaceAll(":|and", ",")
       .split(",")
       .map(string => string.trim.replace(" ", "-"))
       .filter(_.nonEmpty)
+      .toList
+      .map((_, conceptLabel))
+
   }
-
-
 }

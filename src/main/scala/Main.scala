@@ -32,13 +32,8 @@ object Main extends App {
     .read
     .option("header", "true")
     .csv("data/sentences.csv")
-  /*.union(spark
-    .read
-    .option("header", "false")
-    .csv("data/sentencesDbpedia.csv"))*/
 
 
-  //generateTrainingSentences(conceptsDataFrame)
   generateTaggedDataForTrainingNer(conceptsDataFrame, sentencesDataFrame)
   generateKnowledgeGraph(conceptsDataFrame)
 

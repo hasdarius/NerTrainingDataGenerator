@@ -7,30 +7,34 @@ import utils.SparqlUtil.{getInstanceConceptTupleSetFromDbpedia, preProcessConcep
 object SparqlConceptsGenerator {
 
   def updateSystemConcepts(): Unit = {
-    val programmingLanguagesList = getInstanceConceptTupleSetFromDbpedia("Programming Language", programmingLanguagesQuery, programmingLanguage => programmingLanguage.contains("_(programming_language)"))
-      .filter(tuple => tuple._1.length > 1) // avoid cases like letters to avoid overfitting NER model
-    val programmingLanguages = programmingLanguagesList.map(_._1)
-    val toolsAndFrameworksList = getInstanceConceptTupleSetFromDbpedia("Tool/Framework", toolsAndFrameworksQuery, _ => true)
-      .filterNot(tuple => {
-        programmingLanguages.contains(tuple._1) || tuple._1.length == 1 || tuple._1 == "debug"
-      }) // filter programming languages that were mistakenly considered tools by Dbpedia or words like debug which are clearly not tools/frameworks
-    val certificationsList = getInstanceConceptTupleSetFromDbpedia("Certifications", certificationsQuery, !_.contains("list"))
+    val programmingLanguagesList = getInstanceConceptTupleSetFromDbpedia(
+      programmingLanguageLabel,
+      programmingLanguagesQuery,
+      stringFilter = programmingLanguage => programmingLanguage.contains("_(programming_language)") && programmingLanguage.length > 1)
+    // avoid cases like letters to avoid overfitting NER model
 
-    val conceptsList = getInstanceConceptTupleSetFromDbpedia("Programming Concept", conceptsQuery, _ => true)
-      .flatMap(tuple => {
-        preProcessConceptResult(tuple._1)
-          .map((_, tuple._2))
-      })
-      .groupBy(_._1)
-      .values
-      .map(_.head)
-      .toList
+    val toolsAndFrameworksList = getInstanceConceptTupleSetFromDbpedia(
+      toolFrameworkLabel,
+      toolsAndFrameworksQuery,
+      stringFilter = toolFramework => !programmingLanguagesList.map(_._1).contains(toolFramework) && toolFramework.length > 1 && toolFramework != "debug")
+    // avoid programming languages that were mistakenly considered tools by Dbpedia or words like debug which are clearly not tools/frameworks
+
+    val certificationsList = getInstanceConceptTupleSetFromDbpedia(
+      "Certifications",
+      certificationsQuery,
+      stringFilter = certification => !certification.contains("list"))
+    // avoid getting list of certifications as single certifications
+
+    val conceptsList = getInstanceConceptTupleSetFromDbpedia(programmingConceptLabel,
+      conceptsQuery,
+      stringFilter = _ => true)
+      .flatMap(preProcessConceptResult) // concepts in dbpedia are often times a list of concepts. need to take each individual concept from that list
+      .distinctBy(_._1)
       .filterNot(tuple => tuple._1.toLowerCase == "javascript") // Dbpedia considers javascript also as a programming concept
 
-    writeListOfTuplesToFile(conceptsDbpediaFileName, programmingLanguagesList.map(tuple => tuple._1 + "," + tuple._2), append = false)
-    writeListOfTuplesToFile(conceptsDbpediaFileName, toolsAndFrameworksList.map(tuple => tuple._1 + "," + tuple._2))
-    writeListOfTuplesToFile(conceptsDbpediaFileName, certificationsList.map(tuple => tuple._1 + "," + tuple._2))
-    writeListOfTuplesToFile(conceptsDbpediaFileName, conceptsList.map(tuple => tuple._1 + "," + tuple._2))
-  }
+    val dbpediaConcepts = (programmingLanguagesList ++ toolsAndFrameworksList ++ certificationsList ++ conceptsList)
+      .map(tuple => tuple._1 + "," + tuple._2)
 
+    writeListOfTuplesToFile(conceptsDbpediaFileName, dbpediaConcepts, append = false)
+  }
 }

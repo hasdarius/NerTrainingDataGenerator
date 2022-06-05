@@ -4,7 +4,17 @@ package object generator {
   val conceptColumn = "Concept"
   val sentenceColumn = "Sentence"
   val typeColumn = "Type"
+
   val conceptsDbpediaFileName = "data/conceptsDbpedia.csv"
+  val edgesKnowledgeGraphFileName = "edges.csv"
+
+  val programmingLanguageLabel = "Programming Language"
+  val programmingConceptLabel = "Programming Concept"
+  val toolFrameworkLabel = "Tool/Framework"
+
+  val toolProgrammingLanguageRelationship = "uses"
+  val programmingLanguageProgrammingConceptRelationship = "isInfluencedBy"
+  val instanceLabelRelationship = "isA"
 
   val toolsAndFrameworksQuery: String =
     """SELECT ?pl ?p2 ?label
