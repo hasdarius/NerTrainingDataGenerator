@@ -4,10 +4,23 @@ import org.apache.spark.sql.DataFrame
 import utils.FileUtil.writeListOfTuplesToFile
 import utils.GraphUtil._
 import utils.SparkUtil.getListOfDifferentValuesFromColumn
-import utils.SparqlUtil.{getRelationshipSetFromDbpedia, preProcessConceptResult}
+import utils.SparqlUtil
+import utils.SparqlUtil.preProcessConceptResult
 
 
 object KnowledgeGraphComponentsGenerator {
+
+  def getRelationshipSetFromDbpedia(query: String,
+                                    listForFirstTupleElement: List[String],
+                                    listForSecondTupleElement: List[String],
+                                    flatMapFunction: ((String, String)) => List[(String, String)] = tuple => List(tuple)): Set[(String, String)] = {
+    SparqlUtil
+      .getRelationshipTupleFromDbpedia(query)
+      .flatMap(flatMapFunction)
+      .filter(tuple =>
+        listForFirstTupleElement.contains(tuple._1) && listForSecondTupleElement.contains(tuple._2))
+  }
+
 
   def generateKnowledgeGraph(conceptsDataFrame: DataFrame): Unit = {
 
@@ -25,24 +38,12 @@ object KnowledgeGraphComponentsGenerator {
           .toList
     )
 
-    val programmingLanguages = (conceptProgrammingLanguageRelationshipSet ++ toolProgrammingLanguageRelationshipSet)
-      .map(tuple => (tuple._2, "Programming Language"))
-      .groupBy(_._1)
-      .values
-      .map(_.head)
-      .toList
-    val concepts = conceptProgrammingLanguageRelationshipSet.map(tuple => (tuple._1, "Programming Concept"))
-    val tools = toolProgrammingLanguageRelationshipSet.map(tuple => (tuple._1, "Tool/Framework"))
+    val edges = generateEdgeSet(conceptProgrammingLanguageRelationshipSet.map(_.swap), "influences") ++
+      generateEdgeSet(toolProgrammingLanguageRelationshipSet, "uses") ++
+      generateEdgeSet(programmingLanguagesList.map((_, "Programming Language")).toSet, "isA") ++
+      generateEdgeSet(toolsList.map((_, "Tool/Framework")).toSet, "isA") ++
+      generateEdgeSet(conceptsList.map((_, "Programming Concept")).toSet, "isA")
 
-    val vertices = (programmingLanguages ++ concepts ++ tools)
-      .zipWithIndex
-      .map {
-        case ((instance, label), id) => (id.toString, instance, label)
-      }
-    val edges = generateEdgeSet(toolProgrammingLanguageRelationshipSet, vertices, "uses", "used by") ++
-      generateEdgeSet(conceptProgrammingLanguageRelationshipSet, vertices, "influences", "influenced by")
-
-    writeListOfTuplesToFile("vertices.csv", vertices.map(tuple => tuple._1 + "," + tuple._2 + "," + tuple._3), append = false)
-    writeListOfTuplesToFile("edges.csv", edges.map(tuple => tuple._1 + "," + tuple._2 + "," + tuple._3), append = false)
+    writeListOfTuplesToFile("edges.csv", edges.map(tuple => tuple._1 + "," + tuple._2 + "," + tuple._3).toList, append = false)
   }
 }
