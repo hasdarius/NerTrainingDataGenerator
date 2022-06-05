@@ -1,6 +1,5 @@
 package utils
 
-import generator.toolsAndFrameworksQuery
 import org.apache.jena.query.{ParameterizedSparqlString, QueryExecutionFactory, ResultSet}
 
 object SparqlUtil {
@@ -55,24 +54,12 @@ object SparqlUtil {
       .toSet
   }
 
-  def getRelationshipSetFromDbpedia(query: String,
-                                    listForFirstTupleElement: List[String],
-                                    listForSecondTupleElement: List[String],
-                                    flatMapFunction: ((String, String)) => List[(String, String)] = tuple => List(tuple)): Set[(String, String)] = {
-    SparqlUtil
-      .getRelationshipTupleFromDbpedia(query)
-      .flatMap(flatMapFunction)
-      .filter(tuple =>
-        listForFirstTupleElement.contains(tuple._1) && listForSecondTupleElement.contains(tuple._2))
-  }
-
   def preProcessResult(string: String): String =
     string
       .substring(string.lastIndexOf("/") + 1)
       .toLowerCase
       .replace("_", "-") // this is how we link composite words in our training data
       .replaceAll("-\\([^()]*\\)", "") // remove paranthesis from names such as: apache-spark-(framework) -> apache-spark
-
 
   def preProcessConceptResult(string: String): Array[String] = {
     string

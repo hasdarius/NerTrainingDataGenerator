@@ -4,10 +4,23 @@ import org.apache.spark.sql.DataFrame
 import utils.FileUtil.writeListOfTuplesToFile
 import utils.GraphUtil._
 import utils.SparkUtil.getListOfDifferentValuesFromColumn
-import utils.SparqlUtil.{getRelationshipSetFromDbpedia, preProcessConceptResult}
+import utils.SparqlUtil
+import utils.SparqlUtil.preProcessConceptResult
 
 
 object KnowledgeGraphComponentsGenerator {
+
+  def getRelationshipSetFromDbpedia(query: String,
+                                    listForFirstTupleElement: List[String],
+                                    listForSecondTupleElement: List[String],
+                                    flatMapFunction: ((String, String)) => List[(String, String)] = tuple => List(tuple)): Set[(String, String)] = {
+    SparqlUtil
+      .getRelationshipTupleFromDbpedia(query)
+      .flatMap(flatMapFunction)
+      .filter(tuple =>
+        listForFirstTupleElement.contains(tuple._1) && listForSecondTupleElement.contains(tuple._2))
+  }
+
 
   def generateKnowledgeGraph(conceptsDataFrame: DataFrame): Unit = {
 
@@ -25,7 +38,7 @@ object KnowledgeGraphComponentsGenerator {
           .toList
     )
 
-    val edges = generateEdgeSet(conceptProgrammingLanguageRelationshipSet, "influences") ++
+    val edges = generateEdgeSet(conceptProgrammingLanguageRelationshipSet.map(_.swap), "influences") ++
       generateEdgeSet(toolProgrammingLanguageRelationshipSet, "uses") ++
       generateEdgeSet(programmingLanguagesList.map((_, "Programming Language")).toSet, "isA") ++
       generateEdgeSet(toolsList.map((_, "Tool/Framework")).toSet, "isA") ++

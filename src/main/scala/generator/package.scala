@@ -4,6 +4,7 @@ package object generator {
   val conceptColumn = "Concept"
   val sentenceColumn = "Sentence"
   val typeColumn = "Type"
+  val conceptsDbpediaFileName = "data/conceptsDbpedia.csv"
 
   val toolsAndFrameworksQuery: String =
     """SELECT ?pl ?p2 ?label

@@ -1,6 +1,7 @@
 package generator
 
 import utils.FileUtil.writeListOfTuplesToFile
+import utils.SparqlUtil
 import utils.SparqlUtil.{getInstanceConceptTupleSetFromDbpedia, preProcessConceptResult}
 
 object SparqlConceptsGenerator {
@@ -26,12 +27,10 @@ object SparqlConceptsGenerator {
       .toList
       .filterNot(tuple => tuple._1.toLowerCase == "javascript") // Dbpedia considers javascript also as a programming concept
 
-    val fileName = "data/conceptsDbpedia.csv"
-
-    writeListOfTuplesToFile(fileName, programmingLanguagesList.map(tuple => tuple._1 + "," + tuple._2), append = false)
-    writeListOfTuplesToFile(fileName, toolsAndFrameworksList.map(tuple => tuple._1 + "," + tuple._2))
-    writeListOfTuplesToFile(fileName, certificationsList.map(tuple => tuple._1 + "," + tuple._2))
-    writeListOfTuplesToFile(fileName, conceptsList.map(tuple => tuple._1 + "," + tuple._2))
+    writeListOfTuplesToFile(conceptsDbpediaFileName, programmingLanguagesList.map(tuple => tuple._1 + "," + tuple._2), append = false)
+    writeListOfTuplesToFile(conceptsDbpediaFileName, toolsAndFrameworksList.map(tuple => tuple._1 + "," + tuple._2))
+    writeListOfTuplesToFile(conceptsDbpediaFileName, certificationsList.map(tuple => tuple._1 + "," + tuple._2))
+    writeListOfTuplesToFile(conceptsDbpediaFileName, conceptsList.map(tuple => tuple._1 + "," + tuple._2))
   }
 
 }
