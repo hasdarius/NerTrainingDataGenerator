@@ -4,7 +4,7 @@ import org.apache.jena.query.{ParameterizedSparqlString, QueryExecutionFactory, 
 
 object SparqlUtil {
 
-  def querySparql(queryString: String): ResultSet = {
+  def queryDbpedia(queryString: String): ResultSet = {
 
     val sparqlQuery = new ParameterizedSparqlString(""
       + "prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n"
@@ -24,7 +24,7 @@ object SparqlUtil {
 
   def getInstanceConceptTupleSetFromDbpedia(label: String, query: String, stringFilter: String => Boolean): List[(String, String)] = {
 
-    val results = SparqlUtil.querySparql(query)
+    val results = SparqlUtil.queryDbpedia(query)
     var resultSet: Set[String] = Set.empty
 
     while (results.hasNext) {
@@ -38,13 +38,13 @@ object SparqlUtil {
       .map(result => (result, label))
   }
 
-  def getRelationshipTupleFromDbpedia(query: String): Set[(String, String)] = {
+  def getRelationshipTupleSetFromDbpedia(query: String): Set[(String, String)] = {
     var relationshipSet: Set[(String, String)] = Set.empty
-    val languageToolsResults = SparqlUtil.querySparql(query)
+    val results = SparqlUtil.queryDbpedia(query)
 
 
-    while (languageToolsResults.hasNext) {
-      val result = languageToolsResults.next()
+    while (results.hasNext) {
+      val result = results.next()
       relationshipSet += (preProcessResult(result.get("pl").toString) -> preProcessResult(result.get("p2").toString))
     }
 

@@ -4,7 +4,7 @@ import org.apache.spark.sql.DataFrame
 import utils.FileUtil.writeListOfTuplesToFile
 import utils.SparkUtil.getListOfDifferentValuesFromColumn
 
-object NerDataGenerator {
+object NerTrainingDataGenerator {
 
   def generateTaggedDataForTrainingNer(conceptsDataFrame: DataFrame, sentencesDataFrame: DataFrame): Unit = {
 

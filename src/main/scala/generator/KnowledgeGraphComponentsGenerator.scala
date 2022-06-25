@@ -15,7 +15,7 @@ object KnowledgeGraphComponentsGenerator {
                                     destinationInstancesList: List[String],
                                     flatMapFunction: ((String, String)) => List[(String, String)] = tuple => List(tuple)): Set[(String, String)] = {
     SparqlUtil
-      .getRelationshipTupleFromDbpedia(query)
+      .getRelationshipTupleSetFromDbpedia(query)
       .flatMap(flatMapFunction)
       .filter(tuple =>
         sourceInstancesList.contains(tuple._1) && destinationInstancesList.contains(tuple._2))

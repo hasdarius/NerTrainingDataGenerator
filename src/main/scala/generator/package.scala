@@ -5,7 +5,7 @@ package object generator {
   val sentenceColumn = "Sentence"
   val typeColumn = "Type"
 
-  val conceptsDbpediaFileName = "data/conceptsDbpedia.csv"
+  val knowledgeBaseFileName = "data/knowledgeBase.csv"
   val edgesKnowledgeGraphFileName = "edges.csv"
 
   val programmingLanguageLabel = "Programming Language"

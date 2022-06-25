@@ -4,20 +4,21 @@ import utils.FileUtil.writeListOfTuplesToFile
 import utils.SparqlUtil
 import utils.SparqlUtil.{getInstanceConceptTupleSetFromDbpedia, preProcessConceptResult}
 
-object SparqlConceptsGenerator {
+object KnowledgeBaseGenerator {
 
-  def updateSystemConcepts(): Unit = {
+  def updateKnowledgeBase(): Unit = {
     val programmingLanguagesList = getInstanceConceptTupleSetFromDbpedia(
       programmingLanguageLabel,
       programmingLanguagesQuery,
-      stringFilter = programmingLanguage => programmingLanguage.contains("_(programming_language)") && programmingLanguage.length > 1)
+      stringFilter = programmingLanguage => programmingLanguage.contains("_(programming_language)"))
     // avoid cases like letters to avoid overfitting NER model
 
     val toolsAndFrameworksList = getInstanceConceptTupleSetFromDbpedia(
       toolFrameworkLabel,
       toolsAndFrameworksQuery,
-      stringFilter = toolFramework => !programmingLanguagesList.map(_._1).contains(toolFramework) && toolFramework.length > 1 && toolFramework != "debug")
-    // avoid programming languages that were mistakenly considered tools by Dbpedia or words like debug which are clearly not tools/frameworks
+      stringFilter = _ => true).filter{
+      case (toolFramework,_) => !programmingLanguagesList.map(_._1).contains(toolFramework) && toolFramework.length > 1 && toolFramework != "debug"
+    } // avoid programming languages that were mistakenly considered tools by Dbpedia or words like debug which are clearly not tools/frameworks
 
     val certificationsList = getInstanceConceptTupleSetFromDbpedia(
       "Certifications",
@@ -35,6 +36,6 @@ object SparqlConceptsGenerator {
     val dbpediaConcepts = (programmingLanguagesList ++ toolsAndFrameworksList ++ certificationsList ++ conceptsList)
       .map(tuple => tuple._1 + "," + tuple._2)
 
-    writeListOfTuplesToFile(conceptsDbpediaFileName, dbpediaConcepts, append = false)
+    writeListOfTuplesToFile(knowledgeBaseFileName, dbpediaConcepts, append = false)
   }
 }
