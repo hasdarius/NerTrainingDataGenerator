@@ -1,14 +1,15 @@
 import generator.KnowledgeGraphComponentsGenerator.generateKnowledgeGraph
-import generator.NerDataGenerator.generateTaggedDataForTrainingNer
-import generator.SparqlConceptsGenerator.updateSystemConcepts
+import generator.NerTrainingDataGenerator.generateTaggedDataForTrainingNer
+import generator.KnowledgeBaseGenerator.updateKnowledgeBase
 import generator.TrainingSentencesGenerator.generateTrainingSentences
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, SparkSession}
+import utils.SparkUtil
 
 
 object Main extends App {
 
-  updateSystemConcepts()
+  updateKnowledgeBase()
 
   val spark = SparkSession
     .builder()
@@ -18,21 +19,10 @@ object Main extends App {
 
   Logger.getLogger("org").setLevel(Level.OFF)
   Logger.getLogger("akka").setLevel(Level.OFF)
+  Logger.getLogger("log4j").setLevel(Level.OFF)
 
-  val conceptsDataFrame = spark
-    .read
-    .option("header", "true")
-    .csv("data/concepts.csv")
-    .union(spark
-      .read
-      .option("header", "false")
-      .csv("data/conceptsDbpedia.csv"))
-
-  val sentencesDataFrame: DataFrame = spark
-    .read
-    .option("header", "true")
-    .csv("data/sentences.csv")
-
+  val conceptsDataFrame = SparkUtil.readKnowledgeBase(spark)
+  val sentencesDataFrame = SparkUtil.readSentences(spark)
 
   generateTaggedDataForTrainingNer(conceptsDataFrame, sentencesDataFrame)
   generateKnowledgeGraph(conceptsDataFrame)

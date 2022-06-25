@@ -4,9 +4,9 @@ import utils.FileUtil.writeListOfTuplesToFile
 import utils.SparqlUtil
 import utils.SparqlUtil.{getInstanceConceptTupleSetFromDbpedia, preProcessConceptResult}
 
-object SparqlConceptsGenerator {
+object KnowledgeBaseGenerator {
 
-  def updateSystemConcepts(): Unit = {
+  def updateKnowledgeBase(): Unit = {
     val programmingLanguagesList = getInstanceConceptTupleSetFromDbpedia(
       programmingLanguageLabel,
       programmingLanguagesQuery,
@@ -36,6 +36,6 @@ object SparqlConceptsGenerator {
     val dbpediaConcepts = (programmingLanguagesList ++ toolsAndFrameworksList ++ certificationsList ++ conceptsList)
       .map(tuple => tuple._1 + "," + tuple._2)
 
-    writeListOfTuplesToFile(conceptsDbpediaFileName, dbpediaConcepts, append = false)
+    writeListOfTuplesToFile(knowledgeBaseFileName, dbpediaConcepts, append = false)
   }
 }
